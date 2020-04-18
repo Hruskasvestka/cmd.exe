@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>cmd.exe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="t.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+</head>
+<body>
+	<div class="lines">
+		<div class="y-first-line"></div>
+		<div class="y-second-line"></div>
+		<div class="y-third-line"></div>
+	</div>
+
+	<span class="btn anim-button" onclick="goBack()"><< go back</span>
+	<script>
+		function goBack() {
+		  window.history.back()
+		}
+	</script>
+
+<div class="cmd-exe">
+<div class="top-bar">	
+	<ul>
+		<li><img id="cmd-icon" src="cmd.png"><span>C:\WINDOWS\system32\cmd.exe</span></li>
+	</ul>
+</div>
+<pre id="terminal"><ins>Microsoft Windows 98
+(C)Copyright Microsoft Corp. 1991-1998<br />
+C:\Users\Recruiter></ins><ins>1.5</ins>Hello there!<ins>1.5</ins>
+<ins>'Hello there!' is not recognized as an internal or external command,
+operable program or batch file.</ins><br />
+<ins>C:\Users\Recruiter></ins><ins>2</ins><kbd>cd apps</kbd><ins>1.5</ins>
+<ins>C:\Users\Recruiter\Apps></ins><ins>2</ins><kbd>check-profile.exe – 'dominikhruska'</kbd><ins>1.5</ins>
+<ins>Proceed to check (Y/N)?</ins><ins>1</ins><del>N<ins>1.5</ins></del>Y<ins>2</ins>
+
+<ins>//checkProfile(T)</ins>
+<ins>Checking</ins><ins>1.5</ins>.<ins>1.5</ins>.<ins>1.5</ins>.<ins>3</ins>
+
+<ins>Profile 'dominikhruska' was successfully checked!</ins><ins>3</ins>
+
+<ins>C:\Users\Recruiter></ins><ins>1.5</ins><kbd>hire 'dominikhruska'</kbd><ins>1.5</ins>
+<ins>Proceed to hire (Y/N)?</ins><ins>1</ins>Y<ins>2</ins>
+
+<ins>Contacting 'dominikhruska'</ins><ins>1.5</ins>.<ins>1.5</ins>.<ins>1.5</ins>.<ins>3</ins>
+
+<ins>Congratulations!</ins><ins>.5</ins>
+<ins>'dominikhruska' becomes your FrontendDeveloper of your company.</ins><ins>7</ins></pre></div>
+
+<script type="text/javascript">
+
+$('#terminal').t({
+ beep: false,
+ caret:'_',
+ mistype: 8,
+ pause_on_click: false,
+});
+
+</script>
+
+</body>
+</html>
